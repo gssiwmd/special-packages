@@ -28,6 +28,9 @@ git clone --depth 1 https://github.com/linkease/nas-packages-luci.git && cp -rf 
 # luci-app-openlist2
 git clone --depth 1 https://github.com/sbwml/luci-app-openlist2 oplist && cpdir oplist
 
+#luci-app-mosdns
+git clone --depth 1 https://github.com/sbwml/luci-app-mosdns openwrt-mos && mv -n openwrt-mos/{*mosdns,v2dat,geo2txt} ./; rm -rf openwrt-mos
+
 # Argon Theme (清理其自带的 git/github 记录)
 git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon.git && rm -rf ./luci-theme-argon/.git ./luci-theme-argon/.github
 # git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config.git && rm -rf ./luci-app-argon-config/.git ./luci-app-argon-config/.github
